@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app
+spec:
+  destination:
+    name: ''
+    namespace: ''
+    server: https://kubernetes.default.svc
+  source:
+    path: manifest
+    repoURL: https://github.com/bhaarn/ArgoCD.git
+    targetRevision: HEAD
+    directory:
+      recurse: true
+  sources: []
+  project: default
