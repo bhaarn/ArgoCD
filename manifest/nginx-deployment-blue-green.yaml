@@ -24,7 +24,7 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: nginx-rollout-blue-green
+  name: nginx-rollout
   namespace: default
 spec:
   replicas: 1

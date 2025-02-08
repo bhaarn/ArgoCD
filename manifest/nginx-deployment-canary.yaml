@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: nginx-rollout-canary
+  name: nginx-rollout
   namespace: default
 spec:
   replicas: 2
